@@ -7,3 +7,40 @@ body {
   font-family: Arial, sans-serif;
   background: #f5f7fb;
 }
+
+/* LOGIN PAGE */
+.login-container {
+  max-width: 400px;
+  margin: 120px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.login-container input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-container button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+.login-container button:last-child {
+  background: #16a34a;
+}

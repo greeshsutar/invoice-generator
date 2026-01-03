@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { supabase } from "../supabase.js";
 
-
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,10 +26,20 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Login</h2>
-      <input placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-      <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+
+      <input
+        placeholder="Email"
+        onChange={(e) => setEmail(e.target.value)}
+      />
+
+      <input
+        type="password"
+        placeholder="Password"
+        onChange={(e) => setPassword(e.target.value)}
+      />
+
       <button onClick={login}>Login</button>
       <button onClick={signup}>Signup</button>
     </div>
